@@ -72,10 +72,10 @@
 
         /* ─── Nav Logo ─── */
         .nav-logo {
-            height: 96px;
+            height: 64px;
             width: auto;
-            margin-top: -16px;
-            margin-bottom: -16px;
+            margin-top: -8px;
+            margin-bottom: -8px;
             filter: brightness(0) invert(1);  /* White logo on dark header */
             transition: filter 0.5s ease, height 0.3s ease, margin 0.3s ease;
         }
@@ -273,7 +273,7 @@
     ═══════════════════════════════════════════════ -->
     <nav class="fixed w-full z-50 transition-all duration-700" id="navbar">
         <div class="max-w-7xl mx-auto px-6 lg:px-12">
-            <div class="flex justify-between items-center h-28" id="nav-container">
+            <div class="flex justify-between items-center h-20 md:h-28" id="nav-container">
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center z-20">
                     <a href="index.html">
@@ -726,6 +726,7 @@
            4. BOOKING MODAL
         ────────────────────────────────────────── */
         const bookingModal = document.getElementById('booking-modal');
+        let modalHistoryPushed = false;
 
         window.openBookingModal = function () {
             bookingModal.classList.add('open');
@@ -734,15 +735,36 @@
             const tomorrow = new Date();
             tomorrow.setDate(tomorrow.getDate() + 1);
             dateInput.min = tomorrow.toISOString().split('T')[0];
+
+            // Push state to browser history to handle browser back button
+            if (!modalHistoryPushed) {
+                history.pushState({ modalOpen: true }, '');
+                modalHistoryPushed = true;
+            }
         };
 
-        window.closeBookingModal = function () {
+        window.closeBookingModal = function (fromHistoryPop = false) {
             bookingModal.classList.remove('open');
             document.body.classList.remove('overflow-hidden');
+
+            // If we closed the modal manually (not via back button), pop the state we pushed
+            if (!fromHistoryPop && modalHistoryPushed) {
+                history.back();
+                modalHistoryPushed = false;
+            } else if (fromHistoryPop) {
+                modalHistoryPushed = false;
+            }
         };
 
+        // Close on ESC key or browser back button
         document.addEventListener('keydown', function (e) {
             if (e.key === 'Escape') closeBookingModal();
+        });
+
+        window.addEventListener('popstate', function (event) {
+            if (bookingModal.classList.contains('open')) {
+                window.closeBookingModal(true);
+            }
         });
 
         /* ──────────────────────────────────────────

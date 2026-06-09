@@ -151,10 +151,10 @@
 
         /* ─── Nav Logo ─── */
         .nav-logo {
-            height: 96px;
+            height: 64px;
             width: auto;
-            margin-top: -16px;
-            margin-bottom: -16px;
+            margin-top: -8px;
+            margin-bottom: -8px;
             filter: brightness(0) invert(1);
             /* White logo on dark hero */
             transition: filter 0.5s ease, height 0.3s ease, margin 0.3s ease;
@@ -425,7 +425,7 @@
     ═══════════════════════════════════════════════ -->
     <nav class="fixed w-full z-50 transition-all duration-700" id="navbar">
         <div class="max-w-7xl mx-auto px-6 lg:px-12">
-            <div class="flex justify-between items-center h-28" id="nav-container">
+            <div class="flex justify-between items-center h-20 md:h-28" id="nav-container">
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center z-20">
                     <a href="#">
@@ -475,7 +475,7 @@
     <!-- ═══════════════════════════════════════════════
          HERO
     ═══════════════════════════════════════════════ -->
-    <section class="relative h-screen flex items-center justify-center overflow-hidden bg-emerald">
+    <section class="relative min-h-screen md:h-screen flex items-center justify-center overflow-hidden bg-emerald">
         <div class="absolute inset-0 w-full h-full parallax-bg ken-burns"
             style="background-image: url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=1920&auto=format&fit=crop');">
         </div>
@@ -485,16 +485,16 @@
         </div>
 
         <!-- Hero Content — reveals immediately on page load -->
-        <div class="relative z-10 text-center px-6 w-full max-w-4xl mx-auto mt-16" id="hero-content">
-            <p class="text-surface/70 font-serif italic text-lg md:text-xl mb-6 tracking-wide drop-shadow-md"
+        <div class="relative z-10 text-center px-6 w-full max-w-4xl mx-auto pt-28 pb-20 md:pt-16 md:pb-0" id="hero-content">
+            <p class="text-surface/70 font-serif italic text-lg md:text-xl mb-4 md:mb-6 tracking-wide drop-shadow-md"
                 style="opacity:0;animation:heroFadeUp 1.2s 0.3s cubic-bezier(0.2,0.8,0.2,1) forwards;">𝑨 𝒔𝒑𝒂𝒄𝒆 𝒇𝒐𝒓 𝒍𝒐𝒗𝒆, 𝒔𝒊𝒎𝒑𝒍𝒊𝒄𝒊𝒕𝒚, 𝒂𝒏𝒅 𝒕𝒊𝒎𝒆𝒍𝒆𝒔𝒔 𝒎𝒐𝒎𝒆𝒏𝒕𝒔.</p>
-            <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif text-surface mb-8 leading-[1.4] font-normal drop-shadow-lg"
+            <h1 class="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-serif text-surface mb-6 md:mb-8 leading-[1.4] font-normal drop-shadow-lg"
                 style="opacity:0;animation:heroFadeUp 1.2s 0.6s cubic-bezier(0.2,0.8,0.2,1) forwards;">
                 A private garden venue where <span class="text-gold italic font-serif">love</span> fills the air,<br class="hidden md:inline">
                 <span class="text-gold italic font-serif">nature</span> embraces every moment,<br class="hidden lg:inline">
                 and <span class="text-gold italic font-serif">beautiful memories</span> begin. 🤍🌿
             </h1>
-            <p class="text-surface/80 text-base md:text-lg font-light mb-12 max-w-2xl mx-auto leading-loose drop-shadow-md"
+            <p class="text-surface/80 text-base md:text-lg font-light mb-8 md:mb-12 max-w-2xl mx-auto leading-relaxed md:leading-loose drop-shadow-md"
                 style="opacity:0;animation:heroFadeUp 1.2s 0.9s cubic-bezier(0.2,0.8,0.2,1) forwards;"
                 data-th="พื้นที่จัดงานสไตล์โฮมมี่มินิมอล รายล้อมด้วยความร่มรื่นของธรรมชาติ พร้อมการบริการและต้อนรับอย่างอบอุ่นเป็นกันเอง เพื่อวันสำคัญที่จะอยู่ในความทรงจำของคุณตลอดไป"
                 data-en="A cozy, minimalist venue surrounded by the beauty of nature. We offer professional services and a warm, friendly welcome to ensure your special day becomes a timeless memory.">
@@ -503,11 +503,11 @@
             </p>
 
             <!-- Hero CTA Buttons -->
-            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8"
+            <div class="flex flex-wrap gap-3 items-center justify-center mb-8"
                 style="opacity:0;animation:heroFadeUp 1.2s 1.1s cubic-bezier(0.2,0.8,0.2,1) forwards;">
                 <!-- Primary: Visit Us -->
                 <button onclick="openBookingModal()" id="btn-visit"
-                    class="group inline-flex items-center gap-3 bg-white/10 hover:bg-gold border border-white/30 hover:border-gold text-surface px-8 py-4 rounded-full font-light tracking-widest text-sm transition-all duration-500 backdrop-blur-sm shadow-lg hover:shadow-gold/20">
+                    class="group inline-flex items-center gap-2.5 bg-white/10 hover:bg-gold border border-white/30 hover:border-gold text-surface px-5 py-3 md:px-8 md:py-4 rounded-full font-light tracking-widest text-xs md:text-sm transition-all duration-500 backdrop-blur-sm shadow-lg hover:shadow-gold/20">
                     <svg class="w-4 h-4 shrink-0 transition-transform duration-300 group-hover:scale-110" fill="none"
                         stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -517,7 +517,7 @@
                 </button>
                 <!-- Secondary: Packages -->
                 <a href="packages.html" id="btn-packages"
-                    class="group inline-flex items-center gap-3 bg-transparent hover:bg-white/10 border border-white/30 hover:border-white/60 text-surface/80 hover:text-surface px-8 py-4 rounded-full font-light tracking-widest text-sm transition-all duration-500">
+                    class="group inline-flex items-center gap-2.5 bg-transparent hover:bg-white/10 border border-white/30 hover:border-white/60 text-surface/80 hover:text-surface px-5 py-3 md:px-8 md:py-4 rounded-full font-light tracking-widest text-xs md:text-sm transition-all duration-500">
                     <svg class="w-4 h-4 shrink-0 transition-transform duration-300 group-hover:scale-110" fill="none"
                         stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -526,13 +526,9 @@
                     </svg>
                     Packages
                 </a>
-            </div>
-
-            <!-- Hero Gallery Button -->
-            <div class="flex justify-center mb-12"
-                style="opacity:0;animation:heroFadeUp 1.2s 1.3s cubic-bezier(0.2,0.8,0.2,1) forwards;">
+                <!-- Gallery -->
                 <a href="gallery.html" id="btn-gallery"
-                    class="group inline-flex items-center gap-3 bg-transparent hover:bg-white/10 border border-white/30 hover:border-white/60 text-surface/80 hover:text-surface px-8 py-4 rounded-full font-light tracking-widest text-sm transition-all duration-500">
+                    class="group inline-flex items-center gap-2.5 bg-transparent hover:bg-white/10 border border-white/30 hover:border-white/60 text-surface/80 hover:text-surface px-5 py-3 md:px-8 md:py-4 rounded-full font-light tracking-widest text-xs md:text-sm transition-all duration-500">
                     <svg class="w-4 h-4 shrink-0 transition-transform duration-300 group-hover:scale-110" fill="none"
                         stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -542,7 +538,7 @@
                 </a>
             </div>
 
-            <div style="opacity:0;animation:heroFadeUp 1.2s 1.5s cubic-bezier(0.2,0.8,0.2,1) forwards;">
+            <div class="hidden md:block" style="opacity:0;animation:heroFadeUp 1.2s 1.5s cubic-bezier(0.2,0.8,0.2,1) forwards;">
                 <a href="#about" class="inline-block relative group">
                     <span
                         class="block w-[1px] h-16 bg-surface/30 mx-auto transition-all duration-500 group-hover:bg-gold group-hover:h-20"></span>
@@ -1051,6 +1047,7 @@
                    4. BOOKING MODAL
                 ────────────────────────────────────────── */
                 const bookingModal = document.getElementById('booking-modal');
+                let modalHistoryPushed = false;
 
                 window.openBookingModal = function () {
                     bookingModal.classList.add('open');
@@ -1060,16 +1057,36 @@
                     const tomorrow = new Date();
                     tomorrow.setDate(tomorrow.getDate() + 1);
                     dateInput.min = tomorrow.toISOString().split('T')[0];
+
+                    // Push state to browser history to handle browser back button
+                    if (!modalHistoryPushed) {
+                        history.pushState({ modalOpen: true }, '');
+                        modalHistoryPushed = true;
+                    }
                 };
 
-                window.closeBookingModal = function () {
+                window.closeBookingModal = function (fromHistoryPop = false) {
                     bookingModal.classList.remove('open');
                     document.body.classList.remove('overflow-hidden');
+
+                    // If we closed the modal manually (not via back button), pop the state we pushed
+                    if (!fromHistoryPop && modalHistoryPushed) {
+                        history.back();
+                        modalHistoryPushed = false;
+                    } else if (fromHistoryPop) {
+                        modalHistoryPushed = false;
+                    }
                 };
 
-                // Close on ESC key
+                // Close on ESC key or browser back button
                 document.addEventListener('keydown', function (e) {
                     if (e.key === 'Escape') closeBookingModal();
+                });
+
+                window.addEventListener('popstate', function (event) {
+                    if (bookingModal.classList.contains('open')) {
+                        window.closeBookingModal(true);
+                    }
                 });
 
                 /* ─── CONFIG ───────────────────────────────────────────
