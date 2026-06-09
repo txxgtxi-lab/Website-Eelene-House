@@ -1,0 +1,14 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/eelene_house"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/eelene_house.html"
+  to = "/"
+  status = 301
+  force = true
