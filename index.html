@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eelene House | Homey Minimal Venue</title>
+    <title data-th="Eelene House | Homey Minimal Venue" data-en="Eelene House | Homey Minimal Venue">Eelene House | Homey Minimal Venue</title>
     <meta name="description"
-        content="Eelene House พื้นที่จัดงานสไตล์โฮมมี่มินิมอล รายล้อมด้วยธรรมชาติ รองรับแขก 250 ท่าน จ.ปทุมธานี">
+        content="Eelene House พื้นที่จัดงานสไตล์โฮมมี่มินิมอล รายล้อมด้วยธรรมชาติ รองรับแขก 250 ท่าน จ.ปทุมธานี"
+        data-th="Eelene House พื้นที่จัดงานสไตล์โฮมมี่มินิมอล รายล้อมด้วยธรรมชาติ รองรับแขก 250 ท่าน จ.ปทุมธานี"
+        data-en="Eelene House, a homey minimalist event venue surrounded by nature. Capacity up to 250 guests. Pathum Thani.">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -409,6 +411,8 @@
             margin: 0 auto 24px;
         }
     </style>
+    <!-- Translation Manager -->
+    <script src="translate.js" defer></script>
 </head>
 
 <body class="bg-surface text-textMain font-sans antialiased overflow-x-hidden selection:bg-gold selection:text-white">
@@ -483,14 +487,17 @@
         <!-- Hero Content — reveals immediately on page load -->
         <div class="relative z-10 text-center px-6 w-full max-w-4xl mx-auto mt-16" id="hero-content">
             <p class="text-surface/70 font-serif italic text-lg md:text-xl mb-6 tracking-wide drop-shadow-md"
-                style="opacity:0;animation:heroFadeUp 1.2s 0.3s cubic-bezier(0.2,0.8,0.2,1) forwards;">A Place to Call
-                Home</p>
-            <h1 class="text-4xl md:text-6xl lg:text-7xl font-sans text-surface mb-8 leading-[1.3] font-light drop-shadow-lg"
+                style="opacity:0;animation:heroFadeUp 1.2s 0.3s cubic-bezier(0.2,0.8,0.2,1) forwards;">𝑨 𝒔𝒑𝒂𝒄𝒆 𝒇𝒐𝒓 𝒍𝒐𝒗𝒆, 𝒔𝒊𝒎𝒑𝒍𝒊𝒄𝒊𝒕𝒚, 𝒂𝒏𝒅 𝒕𝒊𝒎𝒆𝒍𝒆𝒔𝒔 𝒎𝒐𝒎𝒆𝒏𝒕𝒔.</p>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif text-surface mb-8 leading-[1.4] font-normal drop-shadow-lg"
                 style="opacity:0;animation:heroFadeUp 1.2s 0.6s cubic-bezier(0.2,0.8,0.2,1) forwards;">
-                อบอุ่นดั่งจัดงาน<br>ที่บ้านของคุณเอง
+                A private garden venue where <span class="text-gold italic font-serif">love</span> fills the air,<br class="hidden md:inline">
+                <span class="text-gold italic font-serif">nature</span> embraces every moment,<br class="hidden lg:inline">
+                and <span class="text-gold italic font-serif">beautiful memories</span> begin. 🤍🌿
             </h1>
             <p class="text-surface/80 text-base md:text-lg font-light mb-12 max-w-2xl mx-auto leading-loose drop-shadow-md"
-                style="opacity:0;animation:heroFadeUp 1.2s 0.9s cubic-bezier(0.2,0.8,0.2,1) forwards;">
+                style="opacity:0;animation:heroFadeUp 1.2s 0.9s cubic-bezier(0.2,0.8,0.2,1) forwards;"
+                data-th="พื้นที่จัดงานสไตล์โฮมมี่มินิมอล รายล้อมด้วยความร่มรื่นของธรรมชาติ พร้อมการบริการและต้อนรับอย่างอบอุ่นเป็นกันเอง เพื่อวันสำคัญที่จะอยู่ในความทรงจำของคุณตลอดไป"
+                data-en="A cozy, minimalist venue surrounded by the beauty of nature. We offer professional services and a warm, friendly welcome to ensure your special day becomes a timeless memory.">
                 พื้นที่จัดงานสไตล์โฮมมี่มินิมอล รายล้อมด้วยความร่มรื่นของธรรมชาติ
                 พร้อมการบริการและต้อนรับอย่างอบอุ่นเป็นกันเอง เพื่อวันสำคัญที่จะอยู่ในความทรงจำของคุณตลอดไป
             </p>
@@ -498,7 +505,7 @@
             <!-- Hero CTA Buttons -->
             <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8"
                 style="opacity:0;animation:heroFadeUp 1.2s 1.1s cubic-bezier(0.2,0.8,0.2,1) forwards;">
-                <!-- Primary: นัดเยี่ยมชมสถานที่ -->
+                <!-- Primary: Visit Us -->
                 <button onclick="openBookingModal()" id="btn-visit"
                     class="group inline-flex items-center gap-3 bg-white/10 hover:bg-gold border border-white/30 hover:border-gold text-surface px-8 py-4 rounded-full font-light tracking-widest text-sm transition-all duration-500 backdrop-blur-sm shadow-lg hover:shadow-gold/20">
                     <svg class="w-4 h-4 shrink-0 transition-transform duration-300 group-hover:scale-110" fill="none"
@@ -506,9 +513,9 @@
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
                     </svg>
-                    นัดเยี่ยมชมสถานที่
+                    Visit Us
                 </button>
-                <!-- Secondary: ดูแพ็คเกจของเรา -->
+                <!-- Secondary: Packages -->
                 <a href="packages.html" id="btn-packages"
                     class="group inline-flex items-center gap-3 bg-transparent hover:bg-white/10 border border-white/30 hover:border-white/60 text-surface/80 hover:text-surface px-8 py-4 rounded-full font-light tracking-widest text-sm transition-all duration-500">
                     <svg class="w-4 h-4 shrink-0 transition-transform duration-300 group-hover:scale-110" fill="none"
@@ -517,30 +524,21 @@
                             d="M9.568 3H5.25A2.25 2.25 0 0 0 3 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 0 0 5.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 0 0 9.568 3Z" />
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6Z" />
                     </svg>
-                    ดูแพ็กเกจของเรา
+                    Packages
                 </a>
             </div>
 
-            <!-- Hero Social Links -->
-            <div class="flex items-center justify-center gap-6 mb-12"
+            <!-- Hero Gallery Button -->
+            <div class="flex justify-center mb-12"
                 style="opacity:0;animation:heroFadeUp 1.2s 1.3s cubic-bezier(0.2,0.8,0.2,1) forwards;">
-                <span class="text-surface/40 text-xs tracking-widest uppercase font-light">ติดตามเรา:</span>
-                <a href="https://www.facebook.com/profile.php?id=61572089932598" target="_blank"
-                    rel="noopener noreferrer" class="text-surface/60 hover:text-gold transition duration-300"
-                    aria-label="Facebook">
-                    <i class="fab fa-facebook-f text-lg"></i>
-                </a>
-                <a href="https://www.instagram.com/eelene_house" target="_blank" rel="noopener noreferrer"
-                    class="text-surface/60 hover:text-gold transition duration-300" aria-label="Instagram">
-                    <i class="fab fa-instagram text-lg"></i>
-                </a>
-                <a href="https://lin.ee/Y2c33C3" target="_blank" rel="noopener noreferrer"
-                    class="text-surface/60 hover:text-gold transition duration-300" aria-label="Line">
-                    <i class="fab fa-line text-lg"></i>
-                </a>
-                <a href="https://www.tiktok.com/@eelene.house" target="_blank" rel="noopener noreferrer"
-                    class="text-surface/60 hover:text-gold transition duration-300" aria-label="TikTok">
-                    <i class="fab fa-tiktok text-lg"></i>
+                <a href="gallery.html" id="btn-gallery"
+                    class="group inline-flex items-center gap-3 bg-transparent hover:bg-white/10 border border-white/30 hover:border-white/60 text-surface/80 hover:text-surface px-8 py-4 rounded-full font-light tracking-widest text-sm transition-all duration-500">
+                    <svg class="w-4 h-4 shrink-0 transition-transform duration-300 group-hover:scale-110" fill="none"
+                        stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 15.75l5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.9 2.9m-12.487-6.708l3.181 3.182m0 0a1.5 1.5 0 1 0 2.25-2.25 1.5 1.5 0 0 0-2.25 2.25z" />
+                    </svg>
+                    Gallery
                 </a>
             </div>
 
@@ -576,11 +574,12 @@
 
                 <div class="lg:w-1/2 reveal">
                     <p class="font-serif italic text-gold text-lg mb-4">Our Story</p>
-                    <h2 class="text-4xl md:text-5xl font-sans font-light text-emerald leading-tight mb-8">
+                    <h2 class="text-4xl md:text-5xl font-sans font-light text-emerald leading-tight mb-8" data-th="ความเรียบง่ายคือ<br>ความงดงามที่สุด" data-en="Simplicity is<br>the Ultimate Beauty">
                         ความเรียบง่ายคือ<br>ความงดงามที่สุด
                     </h2>
                     <div class="space-y-6 text-textMuted font-light text-base md:text-lg leading-relaxed">
-                        <p>
+                        <p data-th="เราออกแบบ Eelene House ภายใต้แนวคิด &quot;Minimal &amp; Homey&quot; เพื่อผสมผสานสถาปัตยกรรมแสงธรรมชาติเข้ากับสวนสีเขียวอย่างลงตัว ให้ความรู้สึกผ่อนคลาย อบอุ่น เป็นกันเอง เสมือนเปิดบ้านต้อนรับคนสำคัญมาร่วมเฉลิมฉลองในวันพิเศษของคุณ"
+                           data-en="We designed Eelene House under the concept of &quot;Minimal &amp; Homey&quot; to blend natural light architecture seamlessly with green gardens, providing a relaxing, warm, and friendly atmosphere as if welcoming your loved ones to celebrate your special day.">
                             เราออกแบบ Eelene House ภายใต้แนวคิด "Minimal & Homey"
                             เพื่อผสมผสานสถาปัตยกรรมแสงธรรมชาติเข้ากับสวนสีเขียวอย่างลงตัว ให้ความรู้สึกผ่อนคลาย อบอุ่น
                             เป็นกันเอง เสมือนเปิดบ้านต้อนรับคนสำคัญมาร่วมเฉลิมฉลองในวันพิเศษของคุณ
@@ -590,16 +589,16 @@
                         <!-- Stat: แขก -->
                         <div>
                             <p class="font-serif italic text-gold text-base mb-1">Capacity</p>
-                            <p class="text-textMuted font-light text-xs mb-2">รองรับสูงสุด</p>
+                            <p class="text-textMuted font-light text-xs mb-2" data-th="รองรับสูงสุด" data-en="Max Capacity">รองรับสูงสุด</p>
                             <span class="font-sans font-medium text-emerald text-xl tracking-wide">250 <span
-                                    class="text-sm font-light text-textMuted">ท่าน</span></span>
+                                    class="text-sm font-light text-textMuted" data-th="ท่าน" data-en="Guests">ท่าน</span></span>
                         </div>
                         <!-- Stat: ที่จอดรถ -->
                         <div>
                             <p class="font-serif italic text-gold text-base mb-1">Parking</p>
-                            <p class="text-textMuted font-light text-xs mb-2">ที่จอดรถ</p>
+                            <p class="text-textMuted font-light text-xs mb-2" data-th="ที่จอดรถ" data-en="Parking Lots">ที่จอดรถ</p>
                             <span class="font-sans font-medium text-emerald text-xl tracking-wide">90 <span
-                                    class="text-sm font-light text-textMuted">คัน</span></span>
+                                    class="text-sm font-light text-textMuted" data-th="คัน" data-en="Cars">คัน</span></span>
                         </div>
                     </div>
                 </div>
@@ -624,8 +623,8 @@
 
             <div class="mb-20 text-center reveal">
                 <p class="font-serif italic text-gold text-lg mb-4">One Stop Service</p>
-                <h2 class="text-4xl md:text-5xl font-sans font-light text-emerald">บริการของเรา</h2>
-                <p class="text-xs text-textMuted tracking-wider mt-2">บริการครบวงจรสำหรับวันสำคัญของคุณ</p>
+                <h2 class="text-4xl md:text-5xl font-sans font-light text-emerald" data-th="บริการของเรา" data-en="Our Services">บริการของเรา</h2>
+                <p class="text-xs text-textMuted tracking-wider mt-2" data-th="บริการครบวงจรสำหรับวันสำคัญของคุณ" data-en="Comprehensive services for your special day">บริการครบวงจรสำหรับวันสำคัญของคุณ</p>
             </div>
 
             <div class="border-t border-sageDark/30">
@@ -636,10 +635,10 @@
                     <div class="flex items-center gap-8 mb-4 md:mb-0">
                         <span
                             class="font-serif text-4xl md:text-5xl text-sageDark/40 group-hover:text-gold transition-colors duration-500 italic">01</span>
-                        <h3 class="text-2xl md:text-3xl font-light text-emerald">สถานที่จัดงานแต่งงาน</h3>
+                        <h3 class="text-2xl md:text-3xl font-light text-emerald" data-th="สถานที่จัดงานแต่งงาน" data-en="Wedding Venue">สถานที่จัดงานแต่งงาน</h3>
                     </div>
                     <div class="md:max-w-md text-left md:text-right">
-                        <p class="text-textMuted font-light leading-relaxed">บริการพื้นที่จัดงานพิธีเช้าและงานเลี้ยงฉลอง
+                        <p class="text-textMuted font-light leading-relaxed" data-th="บริการพื้นที่จัดงานพิธีเช้าและงานเลี้ยงฉลอง พร้อมทีมรันคิว ตกแต่งสถานที่ และจัดเลี้ยงอาหาร ครบจบในที่เดียว" data-en="Morning ceremony and reception venue with cue management, decorations, and catering. Everything in one place.">บริการพื้นที่จัดงานพิธีเช้าและงานเลี้ยงฉลอง
                             พร้อมทีมรันคิว ตกแต่งสถานที่ และจัดเลี้ยงอาหาร ครบจบในที่เดียว</p>
                     </div>
                 </div>
@@ -650,10 +649,10 @@
                     <div class="flex items-center gap-8 mb-4 md:mb-0">
                         <span
                             class="font-serif text-4xl md:text-5xl text-sageDark/40 group-hover:text-gold transition-colors duration-500 italic">02</span>
-                        <h3 class="text-2xl md:text-3xl font-light text-emerald">สตูดิโอถ่ายภาพ</h3>
+                        <h3 class="text-2xl md:text-3xl font-light text-emerald" data-th="สตูดิโอถ่ายภาพ" data-en="Photography Studio">สตูดิโอถ่ายภาพ</h3>
                     </div>
                     <div class="md:max-w-md text-left md:text-right">
-                        <p class="text-textMuted font-light leading-relaxed">บริการเช่าสถานที่สำหรับถ่ายภาพ Pre-Wedding
+                        <p class="text-textMuted font-light leading-relaxed" data-th="บริการเช่าสถานที่สำหรับถ่ายภาพ Pre-Wedding ถ่ายภาพแฟชั่น หรือโฆษณา ด้วยสเปซแสงธรรมชาติและมุมสวยงามรอบโครงการ" data-en="Pre-Wedding, fashion, or commercial photo shoot rentals with natural light spaces and beautiful backdrops.">บริการเช่าสถานที่สำหรับถ่ายภาพ Pre-Wedding
                             ถ่ายภาพแฟชั่น หรือโฆษณา ด้วยสเปซแสงธรรมชาติและมุมสวยงามรอบโครงการ</p>
                     </div>
                 </div>
@@ -664,10 +663,10 @@
                     <div class="flex items-center gap-8 mb-4 md:mb-0">
                         <span
                             class="font-serif text-4xl md:text-5xl text-sageDark/40 group-hover:text-gold transition-colors duration-500 italic">03</span>
-                        <h3 class="text-2xl md:text-3xl font-light text-emerald">จัดงานเลี้ยงส่วนตัว</h3>
+                        <h3 class="text-2xl md:text-3xl font-light text-emerald" data-th="จัดงานเลี้ยงส่วนตัว" data-en="Private Parties & Events">จัดงานเลี้ยงส่วนตัว</h3>
                     </div>
                     <div class="md:max-w-md text-left md:text-right">
-                        <p class="text-textMuted font-light leading-relaxed">รองรับการจัดงานเลี้ยงสังสรรค์ส่วนตัว
+                        <p class="text-textMuted font-light leading-relaxed" data-th="รองรับการจัดงานเลี้ยงสังสรรค์ส่วนตัว ปาร์ตี้วันเกิด งานเลี้ยงบริษัท หรือสัมมนา ในบรรยากาศสวนร่มรื่น" data-en="Perfect for private parties, birthdays, corporate events, or seminars in a lush garden atmosphere.">รองรับการจัดงานเลี้ยงสังสรรค์ส่วนตัว
                             ปาร์ตี้วันเกิด งานเลี้ยงบริษัท หรือสัมมนา ในบรรยากาศสวนร่มรื่น</p>
                     </div>
                 </div>
@@ -678,14 +677,14 @@
                     <div class="flex items-center gap-8 mb-4 md:mb-0">
                         <span class="font-serif text-4xl md:text-5xl text-sageDark/30 italic">04</span>
                         <div class="flex items-center gap-4">
-                            <h3 class="text-2xl md:text-3xl font-light text-emerald">คาเฟ่</h3>
+                            <h3 class="text-2xl md:text-3xl font-light text-emerald" data-th="คาเฟ่" data-en="Cafe">คาเฟ่</h3>
                             <span
-                                class="text-[10px] tracking-widest text-gold border border-gold/30 px-3 py-1 rounded-full uppercase">Coming
+                                class="text-[10px] tracking-widest text-gold border border-gold/30 px-3 py-1 rounded-full uppercase" data-th="Coming Soon" data-en="Coming Soon">Coming
                                 Soon</span>
                         </div>
                     </div>
                     <div class="md:max-w-md text-left md:text-right">
-                        <p class="text-textMuted font-light leading-relaxed">บริการเครื่องดื่มพิเศษและขนมโฮมเมดในสวนสวย
+                        <p class="text-textMuted font-light leading-relaxed" data-th="บริการเครื่องดื่มพิเศษและขนมโฮมเมดในสวนสวย เตรียมพบกันเร็วๆ นี้" data-en="Special drinks and homemade bakery in a beautiful garden. Coming soon.">บริการเครื่องดื่มพิเศษและขนมโฮมเมดในสวนสวย
                             เตรียมพบกันเร็วๆ นี้</p>
                     </div>
                 </div>
@@ -694,7 +693,9 @@
 
             <div class="text-center mt-20 reveal">
                 <a href="packages.html"
-                    class="inline-flex items-center gap-4 text-emerald hover:text-gold transition-colors text-sm tracking-widest pb-2 border-b border-sageDark hover:border-gold">
+                    class="inline-flex items-center gap-4 text-emerald hover:text-gold transition-colors text-sm tracking-widest pb-2 border-b border-sageDark hover:border-gold"
+                    data-th="สอบถามข้อมูลแพ็คเกจ &lt;i class=&quot;fas fa-arrow-right text-xs&quot;&gt;&lt;/i&gt;"
+                    data-en="Inquire about packages &lt;i class=&quot;fas fa-arrow-right text-xs&quot;&gt;&lt;/i&gt;">
                     สอบถามข้อมูลแพ็คเกจ <i class="fas fa-arrow-right text-xs"></i>
                 </a>
             </div>
@@ -717,20 +718,20 @@
                 <!-- Contact Info -->
                 <div class="reveal">
                     <p class="font-serif italic text-gold text-lg mb-4">Get In Touch</p>
-                    <h2 class="text-4xl md:text-5xl font-sans font-light mb-12 leading-tight">
+                    <h2 class="text-4xl md:text-5xl font-sans font-light mb-12 leading-tight" data-th="เริ่มสร้างความทรงจำ<br>ของคุณกับเรา" data-en="Start Creating Your<br>Memories With Us">
                         เริ่มสร้างความทรงจำ<br>ของคุณกับเรา
                     </h2>
 
                     <div class="space-y-10 border-l border-surface/10 pl-8">
                         <div>
-                            <p class="text-surface/50 text-xs tracking-widest uppercase mb-2">โทรศัพท์</p>
+                            <p class="text-surface/50 text-xs tracking-widest uppercase mb-2" data-th="โทรศัพท์" data-en="Phone">โทรศัพท์</p>
                             <a href="tel:+66809059263"
                                 class="text-2xl font-light hover:text-gold transition-colors">0809059263</a>
-                            <p class="text-surface/50 text-sm font-light mt-1">(คุณโม)</p>
+                            <p class="text-surface/50 text-sm font-light mt-1" data-th="(คุณโม)" data-en="(Khun Mo)">(คุณโม)</p>
                         </div>
 
                         <div>
-                            <p class="text-surface/50 text-xs tracking-widest uppercase mb-2">ไลน์ออฟฟิเชียล</p>
+                            <p class="text-surface/50 text-xs tracking-widest uppercase mb-2" data-th="ไลน์ออฟฟิเชียล" data-en="Line Official">ไลน์ออฟฟิเชียล</p>
                             <a href="https://lin.ee/Y2c33C3" target="_blank" rel="noopener noreferrer"
                                 class="text-2xl font-light hover:text-gold transition-colors inline-flex items-center gap-3">
                                 <i class="fab fa-line text-[#00B900]"></i> @Eelene House
@@ -738,14 +739,14 @@
                         </div>
 
                         <div>
-                            <p class="text-surface/50 text-xs tracking-widest uppercase mb-2">สถานที่ตั้ง</p>
+                            <p class="text-surface/50 text-xs tracking-widest uppercase mb-2" data-th="สถานที่ตั้ง" data-en="Location">สถานที่ตั้ง</p>
                             <a href="https://www.google.com/maps?q=Eelene+House+%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%94%E0%B8%A3%E0%B8%B5%E0%B8%A1%E0%B8%A7%E0%B8%B4%E0%B8%A5%E0%B8%A5%E0%B9%8C"
                                 target="_blank" rel="noopener noreferrer"
                                 class="text-lg font-light leading-relaxed hover:text-gold transition-colors">
-                                Eelene House หมู่บ้านดรีมวิลล์<br>
+                                <span data-th="Eelene House หมู่บ้านดรีมวิลล์<br>ซอย ตำบล มหาสวัสดิ์<br>อำเภอบางกรวย นนทบุรี" data-en="Eelene House, Dream Ville Village<br>Maha Sawat Subdistrict<br>Bang Kruai District, Nonthaburi">Eelene House หมู่บ้านดรีมวิลล์<br>
                                 ซอย ตำบล มหาสวัสดิ์<br>
-                                อำเภอบางกรวย นนทบุรี
-                                <span class="block mt-2 text-sm text-gold"><i class="fas fa-map-marker-alt mr-1"></i>
+                                อำเภอบางกรวย นนทบุรี</span>
+                                <span class="block mt-2 text-sm text-gold" data-th="&lt;i class=&quot;fas fa-map-marker-alt mr-1&quot;&gt;&lt;/i&gt; ดูแผนที่" data-en="&lt;i class=&quot;fas fa-map-marker-alt mr-1&quot;&gt;&lt;/i&gt; View Map"><i class="fas fa-map-marker-alt mr-1"></i>
                                     ดูแผนที่</span>
                             </a>
                         </div>
@@ -791,7 +792,9 @@
                     </iframe>
                     <a href="https://www.google.com/maps?q=Eelene+House+%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%94%E0%B8%A3%E0%B8%B5%E0%B8%A1%E0%B8%A7%E0%B8%B4%E0%B8%A5%E0%B8%A5%E0%B9%8C"
                         target="_blank" rel="noopener noreferrer"
-                        class="absolute bottom-4 right-4 bg-emerald/90 backdrop-blur-sm text-surface px-5 py-3 text-sm font-light tracking-wider rounded-full hover:bg-gold transition-all duration-300 z-10 flex items-center gap-2">
+                        class="absolute bottom-4 right-4 bg-emerald/90 backdrop-blur-sm text-surface px-5 py-3 text-sm font-light tracking-wider rounded-full hover:bg-gold transition-all duration-300 z-10 flex items-center gap-2"
+                        data-th="<i class=&quot;fas fa-directions&quot;></i> นำทาง"
+                        data-en="<i class=&quot;fas fa-directions&quot;></i> Directions">
                         <i class="fas fa-directions"></i> นำทาง
                     </a>
                 </div>
@@ -800,8 +803,7 @@
 
         <div class="border-t border-surface/10 py-10 text-center relative z-10">
             <img src="Logo/Logo%20Eelene%20House.png" alt="Eelene House" class="footer-logo mx-auto mb-4">
-            <p class="text-xs font-light tracking-widest text-surface/40">&copy; 2025 Eelene House. All Rights Reserved.
-                สงวนลิขสิทธิ์</p>
+            <p class="text-xs font-light tracking-widest text-surface/40" data-th="&copy; 2025 Eelene House. All Rights Reserved. สงวนลิขสิทธิ์" data-en="&copy; 2025 Eelene House. All Rights Reserved.">&copy; 2025 Eelene House. All Rights Reserved. สงวนลิขสิทธิ์</p>
         </div>
     </section>
 
@@ -826,10 +828,10 @@
             <div id="booking-form-wrap">
                 <!-- Header -->
                 <p class="font-serif italic text-gold text-base mb-2">Site Visit</p>
-                <h2 id="modal-title" class="text-3xl md:text-4xl font-sans font-light text-emerald mb-2 leading-tight">
-                    นัดเยี่ยมชมสถานที่
+                <h2 id="modal-title" class="text-3xl md:text-4xl font-sans font-light text-emerald mb-2 leading-tight" data-th="นัดเข้าชมสถานที่" data-en="Book a Site Visit">
+                    นัดเข้าชมสถานที่
                 </h2>
-                <p class="text-textMuted font-light text-sm mb-10 leading-relaxed font-sans">
+                <p class="text-textMuted font-light text-sm mb-10 leading-relaxed font-sans" data-th="กรอกข้อมูลเพื่อขอนัดเข้าชมสถานที่ เจ้าหน้าที่จะติดต่อกลับภายใน 24 ชม." data-en="Please fill in the details. Our staff will contact you back within 24 hours.">
                     กรอกข้อมูลเพื่อขอนัดเข้าชมสถานที่ เจ้าหน้าที่จะติดต่อกลับภายใน 24 ชม.</p>
 
                 <!-- FORM — replace YOUR_FORM_ID with ID from formspree.io -->
@@ -839,13 +841,13 @@
                     <!-- Row 1: ชื่อ + เบอร์โทร -->
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-8">
                         <div>
-                            <label class="bk-label" for="bk-name">ชื่อ *</label>
-                            <input id="bk-name" name="name" type="text" class="bk-input" placeholder="ระบุชื่อของคุณ"
+                            <label class="bk-label" for="bk-name" data-th="ชื่อ *" data-en="Name *">ชื่อ *</label>
+                            <input id="bk-name" name="name" type="text" class="bk-input" placeholder="ระบุชื่อของคุณ" data-placeholder-th="ระบุชื่อของคุณ" data-placeholder-en="Enter your name"
                                 required>
                         </div>
                         <div>
-                            <label class="bk-label" for="bk-phone">เบอร์โทรศัพท์ *</label>
-                            <input id="bk-phone" name="phone" type="tel" class="bk-input" placeholder="0xx-xxx-xxxx"
+                            <label class="bk-label" for="bk-phone" data-th="เบอร์โทรศัพท์ *" data-en="Phone Number *">เบอร์โทรศัพท์ *</label>
+                            <input id="bk-phone" name="phone" type="tel" class="bk-input" placeholder="0xx-xxx-xxxx" data-placeholder-th="0xx-xxx-xxxx" data-placeholder-en="0xx-xxx-xxxx"
                                 required>
                         </div>
                     </div>
@@ -853,19 +855,20 @@
                     <!-- Row 2: วันที่ + เวลา -->
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-8">
                         <div>
-                            <label class="bk-label" for="bk-date">วันที่ต้องการเยี่ยมชม *</label>
+                            <label class="bk-label" for="bk-date" data-th="วันที่ต้องการเยี่ยมชม *" data-en="Date of Visit *">วันที่ต้องการเยี่ยมชม *</label>
                             <input id="bk-date" name="visit_date" type="date" class="bk-input" required>
                         </div>
                         <div>
-                            <label class="bk-label" for="bk-time">เวลาที่สะดวก *</label>
+                            <label class="bk-label" for="bk-time" data-th="เวลาที่สะดวก *" data-en="Preferred Time *">เวลาที่สะดวก *</label>
                             <select id="bk-time" name="visit_time" class="bk-input" required>
-                                <option value="" disabled selected>เลือกช่วงเวลา</option>
-                                <option value="09:00-10:00">09:00 – 10:00 น.</option>
-                                <option value="10:00-11:00">10:00 – 11:00 น.</option>
-                                <option value="11:00-12:00">11:00 – 12:00 น.</option>
-                                <option value="13:00-14:00">13:00 – 14:00 น.</option>
-                                <option value="14:00-15:00">14:00 – 15:00 น.</option>
-                                <option value="15:00-16:00">15:00 – 16:00 น.</option>
+                                <option value="" disabled selected data-th="เลือกช่วงเวลา" data-en="Select time slot">เลือกช่วงเวลา</option>
+                                <option value="09:00-10:00" data-th="09:00 – 10:00 น." data-en="09:00 AM – 10:00 AM">09:00 – 10:00 น.</option>
+                                <option value="10:00-11:00" data-th="10:00 – 11:00 น." data-en="10:00 AM – 11:00 AM">10:00 – 11:00 น.</option>
+                                <option value="11:00-12:00" data-th="11:00 – 12:00 น." data-en="11:00 AM – 12:00 PM">11:00 – 12:00 น.</option>
+                                <option value="13:00-14:00" data-th="13:00 – 14:00 น." data-en="01:00 PM – 02:00 PM">13:00 – 14:00 น.</option>
+                                <option value="14:00-15:00" data-th="14:00 – 15:00 น." data-en="02:00 PM – 03:00 PM">14:00 – 15:00 น.</option>
+                                <option value="15:00-16:00" data-th="15:00 – 16:00 น." data-en="03:00 PM – 04:00 PM">15:00 – 16:00 น.</option>
+                                <option value="17:00-18:00" data-th="17:00 – 18:00 น." data-en="05:00 PM – 06:00 PM">17:00 – 18:00 น.</option>
                             </select>
                         </div>
                     </div>
@@ -873,45 +876,45 @@
                     <!-- Row 3: ประเภทงาน + จำนวนแขก -->
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-8">
                         <div>
-                            <label class="bk-label" for="bk-type">ประเภทงานที่สนใจ</label>
+                            <label class="bk-label" for="bk-type" data-th="ประเภทงานที่สนใจ" data-en="Type of Event">ประเภทงานที่สนใจ</label>
                             <select id="bk-type" name="event_type" class="bk-input">
-                                <option value="" disabled selected>เลือกประเภทงาน</option>
-                                <option value="แต่งงาน">งานแต่งงาน</option>
-                                <option value="Pre-Wedding">ถ่ายภาพ</option>
-                                <option value="งานเลี้ยง">งานเลี้ยงฉลอง</option>
-                                <option value="สัมมนา">สัมมนา</option>
-                                <option value="อื่นๆ">อื่นๆ</option>
+                                <option value="" disabled selected data-th="เลือกประเภทงาน" data-en="Select event type">เลือกประเภทงาน</option>
+                                <option value="แต่งงาน" data-th="งานแต่งงาน" data-en="Wedding">งานแต่งงาน</option>
+                                <option value="Pre-Wedding" data-th="ถ่ายภาพ" data-en="Pre-Wedding / Shoot">ถ่ายภาพ</option>
+                                <option value="งานเลี้ยง" data-th="งานเลี้ยงฉลอง" data-en="Banquet / Party">งานเลี้ยงฉลอง</option>
+                                <option value="สัมมนา" data-th="สัมมนา" data-en="Seminar">สัมมนา</option>
+                                <option value="อื่นๆ" data-th="อื่นๆ" data-en="Other">อื่นๆ</option>
                             </select>
                         </div>
                         <div>
-                            <label class="bk-label" for="bk-guests">จำนวนแขกโดยประมาณ</label>
+                            <label class="bk-label" for="bk-guests" data-th="จำนวนแขกโดยประมาณ" data-en="Estimated Guests">จำนวนแขกโดยประมาณ</label>
                             <select id="bk-guests" name="guest_count" class="bk-input">
-                                <option value="" disabled selected>เลือกจำนวน</option>
-                                <option value="น้อยกว่า 50 ท่าน">น้อยกว่า 50 ท่าน</option>
-                                <option value="50-100 ท่าน">50 – 100 ท่าน</option>
-                                <option value="100-150 ท่าน">100 – 150 ท่าน</option>
-                                <option value="150-200 ท่าน">150 – 200 ท่าน</option>
-                                <option value="200-250 ท่าน">200 – 250 ท่าน (สูงสุด)</option>
+                                <option value="" disabled selected data-th="เลือกจำนวน" data-en="Select count">เลือกจำนวน</option>
+                                <option value="น้อยกว่า 50 ท่าน" data-th="น้อยกว่า 50 ท่าน" data-en="Less than 50">น้อยกว่า 50 ท่าน</option>
+                                <option value="50-100 ท่าน" data-th="50 – 100 ท่าน" data-en="50 – 100">50 – 100 ท่าน</option>
+                                <option value="100-150 ท่าน" data-th="100 – 150 ท่าน" data-en="100 – 150">100 – 150 ท่าน</option>
+                                <option value="150-200 ท่าน" data-th="150 – 200 ท่าน" data-en="150 – 200">150 – 200 ท่าน</option>
+                                <option value="200-250 ท่าน" data-th="200 – 250 ท่าน (สูงสุด)" data-en="200 – 250 (Max)">200 – 250 ท่าน (สูงสุด)</option>
                             </select>
                         </div>
                     </div>
 
                     <!-- Row 4: หมายเหตุ -->
                     <div class="mb-10">
-                        <label class="bk-label" for="bk-note">หมายเหตุ / คำถามเพิ่มเติม</label>
+                        <label class="bk-label" for="bk-note" data-th="หมายเหตุ / คำถามเพิ่มเติม" data-en="Note / Additional Questions">หมายเหตุ / คำถามเพิ่มเติม</label>
                         <textarea id="bk-note" name="note" class="bk-input" rows="3"
                             style="resize:none; padding-top:10px;"
-                            placeholder="ข้อสงสัย หรือความต้องการพิเศษ..."></textarea>
+                            placeholder="ข้อสงสัย หรือความต้องการพิเศษ..." data-placeholder-th="ข้อสงสัย หรือความต้องการพิเศษ..." data-placeholder-en="Any questions or special requests..."></textarea>
                     </div>
 
                     <!-- Privacy note -->
-                    <p class="text-[11px] text-textMuted/60 font-light leading-relaxed mb-8">
+                    <p class="text-[11px] text-textMuted/60 font-light leading-relaxed mb-8" data-th="ข้อมูลของคุณจะถูกเก็บรักษาอย่างปลอดภัย และใช้เพื่อการติดต่อเยี่ยมชมสถานที่เท่านั้น" data-en="Your information will be kept strictly confidential and used only for scheduling site visits.">
                         ข้อมูลของคุณจะถูกเก็บรักษาอย่างปลอดภัย และใช้เพื่อการติดต่อเยี่ยมชมสถานที่เท่านั้น</p>
 
                     <!-- Submit -->
                     <button type="submit" id="bk-submit-btn" class="bk-submit">
-                        <span id="bk-btn-text">ส่งคำขอนัดเยี่ยมชม</span>
-                        <span id="bk-btn-loading" style="display:none;">กำลังส่ง...</span>
+                        <span id="bk-btn-text" data-th="ส่งคำขอนัดเยี่ยมชม" data-en="Submit Booking Request">ส่งคำขอนัดเยี่ยมชม</span>
+                        <span id="bk-btn-loading" style="display:none;" data-th="กำลังส่ง..." data-en="Sending...">กำลังส่ง...</span>
                     </button>
 
                 </form>
@@ -926,18 +929,23 @@
                     </svg>
                 </div>
                 <p class="font-serif italic text-gold text-base mb-3">Thank You</p>
-                <h3 class="text-2xl font-sans font-light text-emerald mb-4">ส่งข้อมูลสำเร็จ</h3>
-                <p class="text-textMuted font-light text-sm leading-relaxed mb-8 max-w-sm mx-auto">
-                    ทีมงานจะติดต่อกลับเพื่อยืนยันวันเวลาเยี่ยมชมภายใน <strong class="text-emerald font-normal">24
-                        ชั่วโมง</strong>.
+                <h3 class="text-2xl font-sans font-light text-emerald mb-4" data-th="ส่งข้อมูลสำเร็จ" data-en="Submission Successful">ส่งข้อมูลสำเร็จ</h3>
+                <p class="text-textMuted font-light text-sm leading-relaxed mb-8 max-w-sm mx-auto"
+                    data-th="ทีมงานจะติดต่อกลับเพื่อยืนยันวันเวลาเยี่ยมชมภายใน <strong class=&quot;text-emerald font-normal&quot;>24 ชั่วโมง</strong>."
+                    data-en="Our team will contact you to confirm your visit within <strong class=&quot;text-emerald font-normal&quot;>24 hours</strong>.">
+                    ทีมงานจะติดต่อกลับเพื่อยืนยันวันเวลาเยี่ยมชมภายใน <strong class="text-emerald font-normal">24 ชั่วโมง</strong>.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-3 justify-center">
                     <a href="https://lin.ee/Y2c33C3" target="_blank" rel="noopener noreferrer"
-                        class="inline-flex items-center justify-center gap-2 border border-emerald text-emerald px-6 py-3 text-sm font-light tracking-widest hover:bg-emerald hover:text-white transition-all duration-300">
+                        class="inline-flex items-center justify-center gap-2 border border-emerald text-emerald px-6 py-3 text-sm font-light tracking-widest hover:bg-emerald hover:text-white transition-all duration-300"
+                        data-th="<i class=&quot;fab fa-line&quot;></i> ติดต่อทาง LINE"
+                        data-en="<i class=&quot;fab fa-line&quot;></i> Contact via LINE">
                         <i class="fab fa-line"></i> ติดต่อทาง LINE
                     </a>
                     <button onclick="closeBookingModal()"
-                        class="inline-flex items-center justify-center gap-2 bg-emerald text-white px-6 py-3 text-sm font-light tracking-widest hover:bg-gold transition-all duration-300">
+                        class="inline-flex items-center justify-center gap-2 bg-emerald text-white px-6 py-3 text-sm font-light tracking-widest hover:bg-gold transition-all duration-300"
+                        data-th="ปิดหน้าต่างนี้"
+                        data-en="Close Window">
                         ปิดหน้าต่างนี้
                     </button>
                 </div>
@@ -949,13 +957,18 @@
     <!-- ═══════════════════════════════════════════════
          FLOATING BUTTONS
      ═══════════════════════════════════════════════ -->
-    <div class="fixed bottom-8 right-8 z-50">
+    <div class="fixed bottom-8 right-8 z-50 flex flex-col items-end gap-3">
+        <!-- Language Switcher (TH/EN) -->
+        <div class="bg-surface/90 backdrop-blur-md border border-sageDark/20 px-1.5 py-1.5 rounded-full shadow-lg flex items-center gap-1">
+            <button onclick="setLanguage('th')" id="lang-th" class="px-3 py-1 rounded-full text-xs tracking-wider transition-all duration-300 font-sans font-medium bg-emerald text-white shadow-sm">TH</button>
+            <button onclick="setLanguage('en')" id="lang-en" class="px-3 py-1 rounded-full text-xs tracking-wider transition-all duration-300 font-sans font-medium text-textMuted hover:text-emerald">EN</button>
+        </div>
         <!-- แชทเลย (Line Official) -->
-        <a href="https://lin.ee/Y2c33C3" target="_blank" rel="noopener noreferrer"
-            class="group flex items-center gap-3 bg-[#00B900] text-white pl-4 pr-5 py-3.5 rounded-full shadow-2xl hover:bg-[#00a800] hover:scale-105 hover:shadow-[#00B900]/30 transition-all duration-300 text-sm font-light tracking-wider"
-            aria-label="Chat now">
+        <a href="https://lin.ee/Y2c33C3" target="_blank" rel="noopener noreferrer" 
+           class="group flex items-center gap-3 bg-[#00B900] text-white pl-4 pr-5 py-3.5 rounded-full shadow-2xl hover:bg-[#00a800] hover:scale-105 hover:shadow-[#00B900]/30 transition-all duration-300 text-sm font-light tracking-wider"
+           aria-label="Chat now">
             <i class="fab fa-line text-2xl"></i>
-            <span class="font-sans font-medium">แชทเลย</span>
+            <span class="font-sans font-medium" data-th="แชทเลย" data-en="Chat Now">แชทเลย</span>
         </a>
     </div>
 
@@ -1070,18 +1083,30 @@
                     const btnLoad = document.getElementById('bk-btn-loading');
                     const submitBtn = document.getElementById('bk-submit-btn');
 
-                    // แปลงวันที่ให้เป็นรูปแบบไทย
+                    // Check active language
+                    const currentLang = localStorage.getItem('language') || 'th';
+
+                    // แปลงวันที่ให้เป็นรูปแบบตามภาษาที่เลือก
                     const rawDate = document.getElementById('bk-date').value;
                     const dateObj = rawDate ? new Date(rawDate + 'T00:00:00') : null;
-                    const thaiDate = dateObj ? dateObj.toLocaleDateString('th-TH', {
+                    const formattedDate = dateObj ? dateObj.toLocaleDateString(currentLang === 'en' ? 'en-US' : 'th-TH', {
                         weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
-                    }) : 'ไม่ระบุ';
+                    }) : (currentLang === 'en' ? 'Not specified' : 'ไม่ระบุ');
 
-                    // จัดเรียงข้อมูลภาษาไทย เพื่อส่งเป็นอีเมลที่อ่านง่าย
-                    const payload = {
+                    // จัดเรียงข้อมูลตามภาษาที่เลือก เพื่อส่งเป็นอีเมลที่อ่านง่าย
+                    const payload = currentLang === 'en' ? {
+                        "Contact Name": document.getElementById('bk-name').value,
+                        "Phone Number": document.getElementById('bk-phone').value,
+                        "Requested Date": formattedDate,
+                        "Convenient Time": document.getElementById('bk-time').value,
+                        "Event Type": document.getElementById('bk-type').value || 'Not specified',
+                        "Estimated Guests": document.getElementById('bk-guests').value || 'Not specified',
+                        "Notes / Additional Questions": document.getElementById('bk-note').value || '-',
+                        "Submitted At (Thai Time)": new Date().toLocaleString('en-US', { timeZone: 'Asia/Bangkok' })
+                    } : {
                         "ชื่อผู้ติดต่อ": document.getElementById('bk-name').value,
                         "เบอร์โทรศัพท์": document.getElementById('bk-phone').value,
-                        "วันที่ต้องการเยี่ยมชม": thaiDate,
+                        "วันที่ต้องการเยี่ยมชม": formattedDate,
                         "เวลาที่สะดวก": document.getElementById('bk-time').value,
                         "ประเภทงานที่สนใจ": document.getElementById('bk-type').value || 'ไม่ระบุ',
                         "จำนวนแขกโดยประมาณ": document.getElementById('bk-guests').value || 'ไม่ระบุ',
@@ -1124,7 +1149,11 @@
                         }
                     } catch (err) {
                         console.error('Booking submission error:', err);
-                        alert('เกิดข้อผิดพลาดในการส่งข้อมูล กรุณาโทรติดต่อโดยตรง หรือแจ้งผ่าน LINE @Eelene House');
+                        if (currentLang === 'en') {
+                            alert('An error occurred while submitting. Please call us directly or contact us via LINE @Eelene House.');
+                        } else {
+                            alert('เกิดข้อผิดพลาดในการส่งข้อมูล กรุณาโทรติดต่อโดยตรง หรือแจ้งผ่าน LINE @Eelene House');
+                        }
                         btnText.style.display = 'inline';
                         btnLoad.style.display = 'none';
                         submitBtn.disabled = false;
